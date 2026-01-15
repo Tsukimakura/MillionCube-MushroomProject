@@ -3,13 +3,27 @@ project:
 
 book:
   title: "World-Manual"
-  author: "Norah Jones"
+  author: "陈照然"
   date: "1/15/2026"
+  cover-image: cover.jpeg
+  sidebar:
+    logo: cover.jpeg
+
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: "世界观设定"
+      chapters:
+        - background.qmd
+        - design.qmd
+    - part: "系统与技术"
+      chapters:
+        - energy.qmd
+        - tech.qmd
+    - part: "环境与社会"
+      chapters:
+        - environment.qmd
+        - social.qmd
+    - appendix.qmd
 
 bibliography: references.bib
 
@@ -17,8 +31,11 @@ format:
   html:
     theme:
       - cosmo
-      - brand
+    toc: true
+    toc-depth: 3
+    toc-location: right
   pdf:
+    toc: true
     documentclass: scrreprt
 
 
