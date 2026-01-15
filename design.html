@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; 设计总则 – World-Manual</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./energy.html" rel="next">
+<link href="./background.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeec0ee3369d426a760d6538ba4eb860.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./background.html">世界观设定</a></li><li class="breadcrumb-item"><a href="./design.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">设计总则</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./cover.jpeg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./cover.jpeg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">World-Manual</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">前言</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">世界观设定</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./background.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">故事背景</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./design.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">设计总则</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">系统与技术</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">能源</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tech.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">科技</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">环境与社会</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./environment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">环境</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./social.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">社会</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">附录</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#选址及自然条件" id="toc-选址及自然条件" class="nav-link active" data-scroll-target="#选址及自然条件"><span class="header-section-number">2.1</span> 选址及自然条件</a>
+  <ul class="collapse">
+  <li><a href="#地理位置与区位条件" id="toc-地理位置与区位条件" class="nav-link" data-scroll-target="#地理位置与区位条件"><span class="header-section-number">2.1.1</span> 地理位置与区位条件</a></li>
+  <li><a href="#地形地貌与空间组织潜力" id="toc-地形地貌与空间组织潜力" class="nav-link" data-scroll-target="#地形地貌与空间组织潜力"><span class="header-section-number">2.1.2</span> 地形地貌与空间组织潜力</a></li>
+  <li><a href="#气候条件与能源环境基础" id="toc-气候条件与能源环境基础" class="nav-link" data-scroll-target="#气候条件与能源环境基础"><span class="header-section-number">2.1.3</span> 气候条件与能源环境基础</a></li>
+  <li><a href="#水文与环境基础条件" id="toc-水文与环境基础条件" class="nav-link" data-scroll-target="#水文与环境基础条件"><span class="header-section-number">2.1.4</span> 水文与环境基础条件</a></li>
+  </ul></li>
+  <li><a href="#人群概述" id="toc-人群概述" class="nav-link" data-scroll-target="#人群概述"><span class="header-section-number">2.2</span> 人群概述</a>
+  <ul class="collapse">
+  <li><a href="#总人数及性别比例" id="toc-总人数及性别比例" class="nav-link" data-scroll-target="#总人数及性别比例"><span class="header-section-number">2.2.1</span> 总人数及性别比例</a></li>
+  <li><a href="#年龄结构" id="toc-年龄结构" class="nav-link" data-scroll-target="#年龄结构"><span class="header-section-number">2.2.2</span> 年龄结构</a></li>
+  <li><a href="#人均能耗" id="toc-人均能耗" class="nav-link" data-scroll-target="#人均能耗"><span class="header-section-number">2.2.3</span> 人均能耗</a></li>
+  <li><a href="#遴选标准" id="toc-遴选标准" class="nav-link" data-scroll-target="#遴选标准"><span class="header-section-number">2.2.4</span> 遴选标准</a></li>
+  </ul></li>
+  <li><a href="#设计理念" id="toc-设计理念" class="nav-link" data-scroll-target="#设计理念"><span class="header-section-number">2.3</span> 设计理念</a>
+  <ul class="collapse">
+  <li><a href="#总体设计立场" id="toc-总体设计立场" class="nav-link" data-scroll-target="#总体设计立场"><span class="header-section-number">2.3.1</span> 总体设计立场</a></li>
+  <li><a href="#能源科技环境人群的整体协同" id="toc-能源科技环境人群的整体协同" class="nav-link" data-scroll-target="#能源科技环境人群的整体协同"><span class="header-section-number">2.3.2</span> 能源—科技—环境—人群的整体协同</a></li>
+  <li><a href="#能源系统的基础定位" id="toc-能源系统的基础定位" class="nav-link" data-scroll-target="#能源系统的基础定位"><span class="header-section-number">2.3.3</span> 能源系统的基础定位</a></li>
+  <li><a href="#科技应用原则" id="toc-科技应用原则" class="nav-link" data-scroll-target="#科技应用原则"><span class="header-section-number">2.3.4</span> 科技应用原则</a></li>
+  <li><a href="#空间秩序与环境管理" id="toc-空间秩序与环境管理" class="nav-link" data-scroll-target="#空间秩序与环境管理"><span class="header-section-number">2.3.5</span> 空间秩序与环境管理</a></li>
+  <li><a href="#人群与长期可居住性" id="toc-人群与长期可居住性" class="nav-link" data-scroll-target="#人群与长期可居住性"><span class="header-section-number">2.3.6</span> 人群与长期可居住性</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./background.html">世界观设定</a></li><li class="breadcrumb-item"><a href="./design.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">设计总则</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">设计总则</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="选址及自然条件" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="选址及自然条件"><span class="header-section-number">2.1</span> 选址及自然条件</h2>
+<section id="地理位置与区位条件" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="地理位置与区位条件"><span class="header-section-number">2.1.1</span> 地理位置与区位条件</h3>
+<p>本世界选址位于<strong>小中甸镇</strong>，隶属云南省迪庆藏族自治州香格里拉市，地处青藏高原东南缘与横断山区过渡地带。</p>
+<p><strong>地理坐标：</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">指标</th>
+<th style="text-align: center;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">纬度</td>
+<td style="text-align: center;">27.801667°N</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">经度</td>
+<td style="text-align: center;">99.755000°E</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">海拔范围</td>
+<td style="text-align: center;">3,200–3,500 m</td>
+</tr>
+</tbody>
+</table>
+<p>[^1]该区域位于滇、川、藏三大地理与文化板块的交汇地带，地质构造稳定、历史气象数据完整，是一个<strong>长期可预测、可工程化管理的高原地区</strong>。</p>
+<p><img src="./images/image2.png" class="img-fluid"></p>
+</section>
+<section id="地形地貌与空间组织潜力" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="地形地貌与空间组织潜力"><span class="header-section-number">2.1.2</span> 地形地貌与空间组织潜力</h3>
+<p>选址区域整体呈现为<strong>高原坝区 + 周边山地环抱</strong>的复合地貌，其空间结构具有显著的工程与规划优势：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">地形单元</th>
+<th style="text-align: center;">特征</th>
+<th style="text-align: center;">设计意义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">高原坝区</td>
+<td style="text-align: center;">地势平坦、连续</td>
+<td style="text-align: center;">适合高密度、模块化、连续建设</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">周边山体</td>
+<td style="text-align: center;">起伏明显、边界清晰</td>
+<td style="text-align: center;">构成天然世界边界与生态缓冲</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">河谷与垭口</td>
+<td style="text-align: center;">方向性明确</td>
+<td style="text-align: center;">形成交通、风能、水能廊道</td>
+</tr>
+</tbody>
+</table>
+<p>[^2]从空间规划角度看，该地形天然支持：</p>
+<ul>
+<li><p><strong>集中式发展</strong>（避免无序蔓延）</p></li>
+<li><p><strong>立体复合布局</strong>（垂直叠加功能）</p></li>
+<li><p><strong>清晰的核心—功能—生态层级结构</strong></p></li>
+</ul>
+</section>
+<section id="气候条件与能源环境基础" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="气候条件与能源环境基础"><span class="header-section-number">2.1.3</span> 气候条件与能源环境基础</h3>
+<p><img src="./images/image3.png" class="img-fluid"></p>
+<p>小中甸地区属于典型<strong>高原季风气候</strong>，其长期统计特征如下：</p>
+<p><strong>1.3.1 气候参数</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">指标</th>
+<th style="text-align: center;">数值区间</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">年均气温</td>
+<td style="text-align: center;">5–6 ℃</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">夏季平均最高气温</td>
+<td style="text-align: center;">20–22 ℃</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">冬季平均最低气温</td>
+<td style="text-align: center;">0 ℃以下</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">昼夜温差</td>
+<td style="text-align: center;">20–30 ℃</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">年日照时数</td>
+<td style="text-align: center;">2,400–2,800 h</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">年平均降水量</td>
+<td style="text-align: center;">≈ 600–650 mm</td>
+</tr>
+</tbody>
+</table>
+<p><img src="./images/image4.jpeg" class="img-fluid"><strong>1.3.2 气候对世界运行的意义</strong></p>
+<ul>
+<li><p><strong>稳定而充足的日照</strong>：为光伏与建筑一体化能源系统提供可靠基础</p></li>
+<li><p><strong>显著昼夜温差</strong>：有利于被动式建筑热调节与储能调峰</p></li>
+<li><p><strong>明确季节性降水</strong>：适合构建水资源调蓄与循环利用系统</p></li>
+</ul>
+<p>该气候条件在本世界中被用于支持真菌培养微环境控制、被动式建筑热工设计以及水能系统的稳定运行。</p>
+</section>
+<section id="水文与环境基础条件" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="水文与环境基础条件"><span class="header-section-number">2.1.4</span> 水文与环境基础条件</h3>
+<p><img src="./images/image5.jpeg" class="img-fluid">区域水文系统完整，上游水源稳定，具备：</p>
+<ul>
+<li><p>居民生活与生产用水保障条件</p></li>
+<li><p>小型水能与调蓄工程的现实基础</p></li>
+<li><p>污水处理与再生回用的工程可行性</p></li>
+</ul>
+<p>在本世界中，自然环境被视为<strong>一个持续运行、可量化管理的系统组成部分</strong>，其状态直接影响能源调度、空间布局与人群生活质量。区域主要水源类型为高山冰川融水与季节性径流，水质背景适合用于无菌科研与循环系统。</p>
+</section>
+</section>
+<section id="人群概述" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="人群概述"><span class="header-section-number">2.2</span> 人群概述</h2>
+<section id="总人数及性别比例" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="总人数及性别比例"><span class="header-section-number">2.2.1</span> 总人数及性别比例</h3>
+<p><strong>2.1.1 总体人口规模</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">指标</th>
+<th style="text-align: center;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">当前常住人口</td>
+<td style="text-align: center;"><strong>1,807 人</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">规划可承载上限</td>
+<td style="text-align: center;">3,614 人</td>
+</tr>
+</tbody>
+</table>
+<p>该人口规模是在能源供给能力、空间组织效率、公共服务承载力与社会系统复杂度之间形成的<strong>稳定运行态结果</strong>。</p>
+<p><strong>2.1.2 性别比例</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">指标</th>
+<th style="text-align: center;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">男性 : 女性</td>
+<td style="text-align: center;"><strong>1.15 : 1</strong></td>
+</tr>
+</tbody>
+</table>
+<p>该比例源于世界建设与运行初期的人员结构与岗位分布，并非制度性设定。</p>
+<p>在长期运行与代际更替过程中，性别结构具备自然调节与优化空间。</p>
+</section>
+<section id="年龄结构" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="年龄结构"><span class="header-section-number">2.2.2</span> 年龄结构</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">年龄段</th>
+<th style="text-align: center;">占比</th>
+<th style="text-align: center;">人数</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0–18 岁</td>
+<td style="text-align: center;">23.63%</td>
+<td style="text-align: center;">427</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">18–55 岁</td>
+<td style="text-align: center;">65.02%</td>
+<td style="text-align: center;">1,175</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">55 岁以上</td>
+<td style="text-align: center;">11.34%</td>
+<td style="text-align: center;">205</td>
+</tr>
+</tbody>
+</table>
+<p>该结构具有以下系统意义：</p>
+<ul>
+<li><p>主体人群处于<strong>高生产与高认知能力阶段</strong></p></li>
+<li><p>教育体系具备完整代际连续性</p></li>
+<li><p>医疗与社会保障负担保持在可控区间</p></li>
+</ul>
+</section>
+<section id="人均能耗" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="人均能耗"><span class="header-section-number">2.2.3</span> 人均能耗</h3>
+<p>本节用于明确世界运行中<strong>人口规模、能源系统与社会复杂度之间的定量约束关系</strong>，是设计总则层面的核心工程指标之一。</p>
+<p><strong>2.3.1 人均综合能耗的定义</strong></p>
+<p>在本世界的设计与阶段性运行核算中，<strong>人均综合能耗</strong>定义为：</p>
+<p><em>在既定技术条件与运行模式下，为维持<strong>居民日常生活、公共服务、生产活动、信息系统及世界基础设施稳定运行</strong>，<strong>平均每名常住居民一年所对应的终端能源消耗总量</strong>。</em></p>
+<p>该指标采用<strong>综合口径</strong>，不区分能源形式，统一折算为电能等效值，用于系统级规划与约束。</p>
+<p><strong>2.3.2 人均综合能耗数值</strong></p>
+<p>依据项目能源核算与运行设定，本世界当前阶段的人均综合能耗为：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">指标</th>
+<th style="text-align: center;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>人均综合能耗</strong></td>
+<td style="text-align: center;"><strong>11,900 kWh/人·年</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">折合日均能耗</td>
+<td style="text-align: center;">≈ 32.6 kWh/人·日</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">适用人口规模</td>
+<td style="text-align: center;">1,807 人</td>
+</tr>
+</tbody>
+</table>
+<p>该数值为<strong>设计与运行统一采用的基准指标</strong>，用于反向约束人口规模、功能配置与能源系统容量。后期人口翻倍，人均能耗保持不变或略微下降，在中微子能量立方的加持下，生产总能量将与之剧增，多余部分将利用原子级复制机提供的材料进行储存（详见外交部分）。</p>
+<p><strong>2.3.3 人均能耗的构成说明</strong></p>
+<p>在设计总则层面，人均能耗不追求对所有子系统进行极端细分，而是按照<strong>世界运行功能模块</strong>进行归类说明：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">功能模块</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">居住与日常生活</td>
+<td style="text-align: center;">包括居住空间照明、热调节、基本生活设备等</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">公共与服务设施</td>
+<td style="text-align: center;">医疗、教育、公共空间、管理与服务系统</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">生产与保障系统</td>
+<td style="text-align: center;">农业、基础制造、维护与物资保障</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">信息与计算系统</td>
+<td style="text-align: center;">通信、数据处理、控制与管理平台</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">基础设施与系统冗余</td>
+<td style="text-align: center;">能源调度、储能损耗、水处理、交通与安全冗余</td>
+</tr>
+</tbody>
+</table>
+<p><em>注：</em></p>
+<ul>
+<li><p><em>各模块具体能耗占比已在对应板块中进行核算；</em></p></li>
+<li><p><em>“设计总则”仅给出<strong>汇总级指标</strong>，不在此重复展开细节计算。</em></p></li>
+</ul>
+<p><strong>2.3.4 人均能耗与人口规模的线性关系</strong></p>
+<p>在当前设计阶段，人均综合能耗被视为<strong>相对稳定的系统参数</strong>，人口规模与世界年总能耗之间呈线性关系：</p>
+<pre class="math"><code>\mathbf{E}_{\text{total}}\mathbf{= N \times 11,900}\text{ kWh}</code></pre>
+<p>其中：</p>
+<ul>
+<li><p><span class="math inline">\(`N`\)</span>为常住人口规模</p></li>
+<li><p><span class="math inline">\(`E_{\text{total}}`\)</span>为世界年终端能源需求总量</p></li>
+</ul>
+<p>据此可得到当前与规划阶段的能耗需求量级：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">人口规模</th>
+<th style="text-align: center;">年终端能耗需求</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1,807 人（当前）</td>
+<td style="text-align: center;">≈ 21.5 GWh/年</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3,614 人（未来）</td>
+<td style="text-align: center;">≈ 43.0 GWh/年</td>
+</tr>
+</tbody>
+</table>
+<p>该关系被作为世界运行中的<strong>硬性工程约束条件</strong>。</p>
+<p><strong>2.3.5 人均能耗指标的角色</strong></p>
+<p>在本世界的设计总则中，人均综合能耗具有以下定位：</p>
+<ol type="1">
+<li><p><strong>不是统计结果，而是设计前提</strong></p></li>
+<li><p><strong>不是生活水平指标，而是系统运行指标</strong></p></li>
+<li><p><strong>不是对外比较工具，而是内部约束参数</strong></p></li>
+</ol>
+<p>据此形成明确原则：</p>
+<p><strong>人口规模、功能扩展与社会复杂度的提升，</strong></p>
+<p><strong>必须始终在既定人均能耗与能源系统承载能力的约束下进行。</strong></p>
+<p>这一原则保证了世界在长期运行中不会因规模扩张或功能叠加而破坏系统整体稳定性。</p>
+</section>
+<section id="遴选标准" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="遴选标准"><span class="header-section-number">2.2.4</span> 遴选标准</h3>
+<p><strong>人群构成的多维评价模型</strong></p>
+<p>人群构成并非随机聚合，而是基于世界长期运行需求形成的<strong>多维综合能力模型</strong>：</p>
+<p><strong>1. 生理与健康适应性</strong></p>
+<ul>
+<li><p>长期高原环境适应能力</p></li>
+<li><p>稳定的身体机能与健康水平</p></li>
+</ul>
+<p><strong>2. 专业与知识结构</strong></p>
+<ul>
+<li><p>覆盖能源、工程、建筑、农业、医疗、科技、教育、治理等关键领域</p></li>
+<li><p>强调跨学科协作能力</p></li>
+</ul>
+<p><strong>3. 社会协作与心理稳定性</strong></p>
+<ul>
+<li><p>适应高度系统化社会结构</p></li>
+<li><p>具备长期协作与共同体意识</p></li>
+</ul>
+<p><strong>4. 价值共识与长期适配性</strong></p>
+<ul>
+<li><p>理解并认同世界整体运行逻辑</p></li>
+<li><p>接受资源、空间与能耗受限条件下的生活方式</p></li>
+</ul>
+<p><em>该遴选模型用于维持人群能力结构与世界系统复杂度之间的长期匹配。</em></p>
+</section>
+</section>
+<section id="设计理念" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="设计理念"><span class="header-section-number">2.3</span> 设计理念</h2>
+<section id="总体设计立场" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="总体设计立场"><span class="header-section-number">2.3.1</span> 总体设计立场</h3>
+<p>本设计总则并非抽象构想，而是对一个<strong>已经形成明确技术体系与空间结构的世界</strong>进行系统性总结。</p>
+<p>其核心目标是：在有限空间内，构建一个 <strong>能源自给、技术可行、环境可管理、人群可长期居住</strong> 的完整世界系统。</p>
+</section>
+<section id="能源科技环境人群的整体协同" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="能源科技环境人群的整体协同"><span class="header-section-number">2.3.2</span> 能源—科技—环境—人群的整体协同</h3>
+<p>世界运行建立在以下共识之上：</p>
+<ul>
+<li><p><strong>能源</strong>：提供一切系统运行的物理基础</p></li>
+<li><p><strong>科技</strong>：提升能源效率、系统可靠性与管理精度</p></li>
+<li><p><strong>环境</strong>：作为资源来源与承载介质被持续管理</p></li>
+<li><p><strong>人群</strong>：既是系统服务对象，也是系统运行主体</p></li>
+</ul>
+<p>四者形成高度耦合的整体结构，任何单一要素的变化都会反馈至整体系统。</p>
+</section>
+<section id="能源系统的基础定位" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="能源系统的基础定位"><span class="header-section-number">2.3.3</span> 能源系统的基础定位</h3>
+<p>能源体系强调：</p>
+<ul>
+<li><p>长期稳定性</p></li>
+<li><p>冗余与安全边界</p></li>
+<li><p>可预测、可调度的运行特征</p></li>
+</ul>
+<p>能源供给能力直接限定人口规模、技术复杂度与生活生产强度。</p>
+</section>
+<section id="科技应用原则" class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="科技应用原则"><span class="header-section-number">2.3.4</span> 科技应用原则</h3>
+<p>科技体系遵循以下原则：</p>
+<ul>
+<li><p>技术来源真实，可在现实或实验室中验证</p></li>
+<li><p>系统路径清晰，运行逻辑可解释</p></li>
+<li><p>能耗、维护与风险可评估</p></li>
+<li><p>不依赖未来假设作为前提</p></li>
+</ul>
+<p>科技的作用是<strong>降低单位资源消耗、提高整体运行效率</strong>。</p>
+</section>
+<section id="空间秩序与环境管理" class="level3" data-number="2.3.5">
+<h3 data-number="2.3.5" class="anchored" data-anchor-id="空间秩序与环境管理"><span class="header-section-number">2.3.5</span> 空间秩序与环境管理</h3>
+<p>空间设计强调：</p>
+<ul>
+<li><p>功能清晰、层级明确</p></li>
+<li><p>资源流动路径可追踪</p></li>
+<li><p>对外部环境影响可评估</p></li>
+</ul>
+<p>环境并非背景，而是被纳入统一管理体系的重要组成部分。</p>
+</section>
+<section id="人群与长期可居住性" class="level3" data-number="2.3.6">
+<h3 data-number="2.3.6" class="anchored" data-anchor-id="人群与长期可居住性"><span class="header-section-number">2.3.6</span> 人群与长期可居住性</h3>
+<p>所有设计最终指向一个核心目标：</p>
+<p><strong>长期可居住性。</strong></p>
+<p>即：</p>
+<ul>
+<li><p>稳定而可预期的生活条件</p></li>
+<li><p>清晰的社会结构与公共空间秩序</p></li>
+<li><p>可持续的能源与资源供给</p></li>
+<li><p>具备延续性的教育、文化与知识体系</p></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./background.html" class="pagination-link" aria-label="故事背景">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">故事背景</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./energy.html" class="pagination-link" aria-label="能源">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">能源</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
