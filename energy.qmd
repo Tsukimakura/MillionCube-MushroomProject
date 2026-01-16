@@ -382,7 +382,9 @@
 
 各类能耗在空间中形成明确对应关系，并通过独立回路与集中调度协同运行，使不同活动的能耗在时间与空间上保持可预期与可控制，从而维持整体人均能耗的稳定水平。
 
-### 能源分布示意图 [^2]
+### 能源分布示意图
+
+以下为能源分布的不同示意图。[^2]
 
 [^2]: 该节中三示意图均基于手绘草图，通过AI优化生成
 
@@ -597,7 +599,9 @@
 
 :::
 
-#### 太阳能[^4]
+#### 太阳能
+
+<center>太阳能资源特征与具体分析概览[^4]</center>
 
 [^4]: 
   https://zhidao.baidu.com/question/1504059590194063659.html
@@ -607,7 +611,6 @@
   http://finance.people.com.cn/n1/2025/0613/c1004-40499991.html
 
 ::: {#solar-energy-analysis tbl-colwidths="[20,80]"}
-太阳能资源特征与具体分析概览
 
 | 特征维度 | 具体分析 |
 |:------|:-----------------------------------------------------------|
@@ -619,7 +622,9 @@
 
 :::
 
-#### 化学能[^5]
+#### 化学能
+
+[^5]
 
 [^5]: 
   董沫,戴明华,刘鹏飞. “双碳”目标下再生水厂沼气发电系统设计[J].工程技术研
@@ -694,9 +699,11 @@ kJ/m³（甲烷含量为65%）**，**沼气进入内燃机发电，转化为电�
 
 **锂电池：** 充放电循环效率很高，通常可达90%-95%以上。
 
-#### 生物质能[^6]
+#### 生物质能
 
-[^6]: [CNKI《生物质催化热解制备高品位液体燃料研究进展》]<br>Wang, Z., et al. (2022). "Catalytic pyrolysis of biomass over charcoal activated by H3PO4 for tar reduction." Fuel Processing Technology, 237, 107470. (WOS)<br>[CNKI《云南省生物质燃烧时空分布及影响因素分析》]<br>[CNKI《基于 GIS 的生物质资源收集运输路径优化研究》]<br>[GB/T 35816-2018《林业生物质固体燃料产品质量》]<br>Li, J., et al. (2021). "A novel solar-biomass integrated system for sustainable syngas production: Thermodynamic and economic analysis." Solar Energy, 224, 122-134. (WOS)<br>[CNKI《多孔介质燃烧器应用于低热值气体的实验研究》]
+[^6]
+
+[^6]: [CNKI《生物质催化热解制备高品位液体燃料研究进展》] \ Wang, Z., et al. (2022). "Catalytic pyrolysis of biomass over charcoal activated by H3PO4 for tar reduction." Fuel Processing Technology, 237, 107470. (WOS) \ [CNKI《云南省生物质燃烧时空分布及影响因素分析》] \ [CNKI《基于 GIS 的生物质资源收集运输路径优化研究》] \ [GB/T 35816-2018《林业生物质固体燃料产品质量》] \ Li, J., et al. (2021). "A novel solar-biomass integrated system for sustainable syngas production: Thermodynamic and economic analysis." Solar Energy, 224, 122-134. (WOS) \ [CNKI《多孔介质燃烧器应用于低热值气体的实验研究》]
 
 ##### 能量密度
 
