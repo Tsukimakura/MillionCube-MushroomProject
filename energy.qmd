@@ -1,7 +1,5 @@
 # 能源
 
-
-
 ## 主要能源形式
 
 ### 能源系统总体构成
@@ -699,13 +697,13 @@ kJ/m³（甲烷含量为65%）**，**沼气进入内燃机发电，转化为电�
 #### 生物质能[^6]
 
 [^6]: 
-  1. [CNKI《生物质催化热解制备高品位液体燃料研究进展》]
-  2. Wang, Z., et al. (2022). "Catalytic pyrolysis of biomass over charcoal activated by H3PO4 for tar reduction." Fuel Processing Technology, 237, 107470. (WOS)
-  3. [CNKI《云南省生物质燃烧时空分布及影响因素分析》]
-  4. [CNKI《基于 GIS 的生物质资源收集运输路径优化研究》]
-  5. [GB/T 35816-2018《林业生物质固体燃料产品质量》]
-  6. Li, J., et al. (2021). "A novel solar-biomass integrated system for sustainable syngas production: Thermodynamic and economic analysis." Solar Energy, 224, 122-134. (WOS)
-  7. [CNKI《多孔介质燃烧器应用于低热值气体的实验研究》]
+  [CNKI《生物质催化热解制备高品位液体燃料研究进展》]<br>
+  Wang, Z., et al. (2022). "Catalytic pyrolysis of biomass over charcoal activated by H3PO4 for tar reduction." Fuel Processing Technology, 237, 107470. (WOS)<br>
+  [CNKI《云南省生物质燃烧时空分布及影响因素分析》]<br>
+  [CNKI《基于 GIS 的生物质资源收集运输路径优化研究》]<br>
+  [GB/T 35816-2018《林业生物质固体燃料产品质量》]<br>
+  Li, J., et al. (2021). "A novel solar-biomass integrated system for sustainable syngas production: Thermodynamic and economic analysis." Solar Energy, 224, 122-134. (WOS)<br>
+  [CNKI《多孔介质燃烧器应用于低热值气体的实验研究》]
 
 ##### 能量密度
 
