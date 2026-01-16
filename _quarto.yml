@@ -5,9 +5,9 @@ book:
   title: "World-Manual"
   author: "陈照然"
   date: "1/15/2026"
-  cover-image: cover.jpeg
+  cover-image: cover.jpg
   sidebar:
-    logo: cover.jpeg
+    logo: cover.jpg
 
   chapters:
     - index.qmd
