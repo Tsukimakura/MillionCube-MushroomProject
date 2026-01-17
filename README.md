@@ -1,6 +1,5 @@
 # World-Manual | 《百万立方未来世界》项目成果
 
-[![Quarto Publish](https://github.com/Tsukimakura/MillionCube-MushroomProject/actions/workflows/publish.yml/badge.svg)](https://github.com/Tsukimakura/MillionCube-MushroomProject/actions/workflows/publish.yml)
 [![Status](https://img.shields.io/badge/Status-Final_Submission-green)](https://img.shields.io/badge/Status-Final_Submission-green)
 
 本项目系 **浙江大学 2025 学年秋冬学期《百万立方未来世界》** 课程“菌子好述组”的最终设计成果。
