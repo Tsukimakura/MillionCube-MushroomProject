@@ -53,6 +53,14 @@ format:
     documentclass: scrreprt
     links-as-notes: true
     pdf-engine: xelatex
+    mainfont: "DejaVu Sans"
+    CJKmainfont: "Noto Sans CJK SC"
+    number-sections: true
     include-in-header:
       - text: |
           \usepackage{pdfpages}
+  epub:
+    toc: true
+    cover-image: cover.jpg
+    title: "World-Manual"
+    author: "陈照然 郭佳琪 姚雨佳 郑融生 虞凯程 蒋浩翔 陈灵石"
