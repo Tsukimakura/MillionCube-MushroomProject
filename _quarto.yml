@@ -43,6 +43,7 @@ format:
   pdf:
     toc: true
     documentclass: scrreprt
+    links-as-notes: true
     pdf-engine: xelatex
     include-in-header:
       - text: |
