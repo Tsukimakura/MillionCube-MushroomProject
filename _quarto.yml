@@ -8,6 +8,13 @@ book:
   author: "陈照然 郭佳琪 姚雨佳 郑融生 虞凯程 蒋浩翔 陈灵石"
   date: "1/15/2026"
   cover-image: cover.jpg
+
+  navbar: 
+    right:
+      - icon: github
+        href: https://github.com/Tsukimakura/MillionCube-MushroomProject
+        text: "书籍源码"
+
   sidebar:
     logo: cover.jpg
 
@@ -37,8 +44,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme:
-      - cosmo
+    theme: cosmo
     toc: true
     toc-depth: 5
     toc-location: right
