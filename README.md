@@ -1,0 +1,25 @@
+# World-Manual | 《百万立方未来世界》项目成果
+
+[![Quarto Publish](https://github.com/Tsukimakura/MillionCube-MushroomProject/actions/workflows/publish.yml/badge.svg)](https://github.com/Tsukimakura/MillionCube-MushroomProject/actions/workflows/publish.yml)
+[![Status](https://img.shields.io/badge/Status-Final_Submission-green)](https://img.shields.io/badge/Status-Final_Submission-green)
+
+本项目系 **浙江大学 2025 学年秋冬学期《百万立方未来世界》** 课程“菌子好述组”的最终设计成果。
+
+## 📖 在线阅读地址
+
+![alt 书籍封面](cover.jpg)
+
+👉 **[点击此处阅读完整电子书](https://tsukimakura.github.io/MillionCube-MushroomProject/)**
+
+---
+
+## 🛠 开发与构建
+
+本书使用 [Quarto](https://quarto.org/) 构建，采用 Markdown 编写，通过 GitHub Actions 自动发布。
+
+## 项目状态
+
+- 交付日期： 2026 年 1 月 18 日
+- 更新说明： 本项目已完成课程最终交付，自 2026 年 1 月 18 日起停止常规维护与更新。
+
+© 2026 菌子好述组
