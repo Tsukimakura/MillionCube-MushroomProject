@@ -1,5 +1,19 @@
 ## 千万立方合作协议
 
-*见下一页（本页为空页）*
-
 *注：千万立方合作协议中的页数为相对页数*
+
+*千万立方合作协议书由全体2025秋冬参与浙江大学《百万立方未来世界》课程的同学共著*
+
+### 千万立方合作协议书{.unnumbered}
+
+::: {.content-visible when-format="html"}
+#### 在线预览{.unnumbered}
+请通过下方的窗口预览文件。如果无法加载，你也可以 [点击此处下载 PDF 直接查看](Ten-millionProject.pdf)。
+
+<iframe src="Ten-millionProject.pdf" width="100%" height="800px" style="border: 1px solid #ccc;">
+</iframe>
+:::
+
+::: {.content-visible when-format="pdf"}
+\includepdf[pages=-]{Ten-millionProject.pdf}
+:::
