@@ -23,7 +23,13 @@ book:
       chapters:
         - environment.qmd
         - social.qmd
-    - appendix.qmd
+
+  appendices: 
+    - mazu.qmd
+    - jiyinchongzu.qmd
+    - dameiyunnan.qmd
+    - immigration.qmd
+    - immigration.qmd
 
 bibliography: references.bib
 
