@@ -1,6 +1,8 @@
 project:
   type: book
 
+lang: zh-Hans
+
 book:
   title: "World-Manual"
   author: "陈照然 郭佳琪 姚雨佳 郑融生 虞凯程 蒋浩翔 陈灵石"
